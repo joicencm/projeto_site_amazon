@@ -1,15 +1,14 @@
 #Author: joicencm@gmail.com
 
-@tag
+@teste
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  @carrinho
+  Scenario: Como usuario quero selecionar o produto para uma possivel compra
+    Given pesquisar o produto desejado
+    When clicar em pesquisar
+    And clicar no produto desejado
+    And clicar em adicionar no carrinho    
+    And escolher a opção de seguro
+    Then valido mensagem "Adicionado ao carrinho"
